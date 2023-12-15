@@ -1,0 +1,268 @@
+@font-face {
+  font-family: "Courgette";
+  src: url(font/Courgette/Courgette-Regular.ttf);
+}
+
+body {
+  background-color: black;
+}
+
+.navbar {
+  background-color: palevioletred;
+  font-family: "Courgette";
+}
+
+.navbar-nav a:hover {
+  color: white;
+}
+
+.navbar-nav a {
+  color: black;
+}
+
+section {
+  font-family: "Courgette";
+}
+
+/* Index.html */
+.jumbotron {
+  display: flex;
+  justify-content: center;
+  padding-top: 125px;
+  padding-bottom: 125px;
+}
+
+.identity {
+  padding-top: 50px;
+  padding-left: 120px;
+  text-align: center;
+  font-family: "Courgette";
+}
+
+.name {
+  font-size: 50px;
+  color: palevioletred;
+}
+
+.job {
+  font-size: 20px;
+  color: lightpink;
+}
+
+.btn-project a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+/* Index.html end */
+
+/* Project.html */
+#project {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  color: indianred;
+}
+
+.project{
+  padding-top: 20px;
+  color: palevioletred;
+}
+
+.project-title h5 {
+  color: lightpink;
+}
+
+.project-desc {
+  color: white;
+  font-size: 17px;
+}
+
+.project-photo {
+  padding-top: 10px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.project-photo img{
+  padding: 5px;
+  width: 350px;
+  border-radius: 5%;
+}
+/* Project.html End */
+
+/* AboutMe.html */
+.about-me,
+.experience,
+.education,
+.skill,
+.certificate-2,
+.contact {
+  padding-top: 70px;
+  color: indianred;
+}
+
+.about-me p {
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.row-experience,
+.education-1 {
+  padding-top: 20px;
+}
+
+.position h4,
+.universitas h4 {
+  color: palevioletred;
+}
+
+.about-me p,
+.position h6,
+.universitas h6,
+.certificate-title,
+.contact-title {
+  color: lightpink;
+}
+
+.position p,
+.universitas p,
+.skill-column {
+  color: beige;
+}
+
+.description ul,
+.certificate-publisher {
+  color: white;
+}
+
+.skill .container-grid {
+  display: grid;
+  /* Membuat dua kolom dengan lebar yang sama */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* Jarak antar kolom */
+  gap: 20px;
+  padding-top: 20px;
+  justify-content: space-around;
+  letter-spacing: 2px;
+}
+
+.certificate {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+  padding-top: 20px;
+}
+
+.certificate-img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.certificate-img:hover {
+  opacity: 0.5;
+}
+
+.full-img {
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.full-img img {
+  padding-top: 50px;
+  width: 100%;
+  max-width: 390px;
+}
+
+.full-img span {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.certificate-desc {
+  padding-top: 20px;
+}
+
+.col-contact {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contact-icon i {
+  font-size: 40px;
+  color: crimson;
+}
+
+.contact-fill,
+.contact-fill a {
+  color: beige;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* AboutMe.html end */
+
+/* Responsive */
+@media (max-width: 992px) {
+  .jumbotron {
+    /* padding-top: 50px; */
+    padding-bottom: 0px;
+  }
+
+  .profil {
+    flex-wrap: wrap;
+  }
+
+  .photo img {
+    width: 200px;
+  }
+
+  .name {
+    font-size: 30px;
+  }
+
+  .job {
+    font-size: 17px;
+  }
+
+  .about-me,
+  #project {
+    padding-top: 70px;
+  }
+
+  .education-1,
+  .certificate {
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .full-img img {
+    width: 79%;
+    max-width: 500px;
+  }
+
+  .project-photo img{
+    text-align: center;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .jumbotron {
+    padding-top: 50px;
+    padding-bottom: 0px;
+  }
+
+  .identity {
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sara Puja Kesuma</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container-md">
+        <a class="navbar-brand" href="index.html">SaraPuja</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" href="#about-me" onclick="setActive(0)">About Me</a>
+            <a class="nav-link" href="#experience" onclick="setActive(1)">Experience</a>
+            <a class="nav-link" href="#education" onclick="setActive(2)">Eduaction</a>
+            <a class="nav-link" href="#skill" onclick="setActive(3)">Skill</a>
+            <a class="nav-link" href="#certificate" onclick="setActive(4)">Certificate</a>
+            <a class="nav-link" href="#contact" onclick="setActive(5)">Contact</a>
+            <a class="nav-link" href="project.html" onclick="setActive(6)">My Project</a>
+            <a class="nav-link" href="index.html" onclick="setActive(7)"><i class="bi bi-house-door-fill"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- About Me -->
+    <section class="about-me container" id="about-me">
+      <h3>About Me</h3>
+      <p class="container">
+        Saya seorang lulusan D3 Sistem Informasi di Universitas Bina Sarana Informatika Kota Yogyakarta. Saya memiliki ketertarikan yang tinggi untuk menjadi seorang Front End Web. Saya memiliki pengalaman membuat suatu aplikasi magang berbasis website di suatu instansi pemerintahan secara berkelompok.
+      </p>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience container" id="experience">
+      <h3>Experience</h3>
+      <div class="row row-experience container justify-content-around align-items-center">
+        <div class="col-md-4 position">
+          <h4>Front End Web Developer</h4>
+          <h6>Dinas Komunikasi, Informatika dan Persandian Kota Yogyakarta</h6>
+          <p>
+            April 2023 - Juni 2023
+          </p>
+          <p>Magang / Praktik Kerja Lapangan</p>
+        </div>
+        <div class="col-md description">
+          <ul>
+            <li>
+              Mengembangkan Perancangan Sistem Informasi Aplikasi Pendaftaran Magang menjadiRancangan Sistem Informasi Aplikasi Magang (SI AMANG) di Dinas Komunikasi, Informatikadan Persandian Kota Yogyakarta.
+            </li>
+            <li>
+              Melakukan unit test untuk memastikan integritas kode dan mengurangi jumlah bug yang ditemukan dalam produksi.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row row-experience container justify-content-around align-items-center">
+        <div class="col-md-4 position">
+          <h4>Front End Web Developer</h4>
+          <h6>Dinas Komunikasi, Informatika dan Persandian Kota Yogyakarta</h6>
+          <p>
+            September 2022 - Desember 2022
+          </p>
+          <p>Magang / Praktik Kerja Lapangan</p>
+        </div>
+        <div class="col-md description">
+          <ul>
+            <li>
+              Membangun Perancangan Sistem Informasi Aplikasi Pendaftaran Magang Berbasis Website pada DISKOMINFOSAN Kota Yogyakarta dengan Framework CodeIgniter 4.
+            </li>
+            <li>
+              Menggunakan HTML, CSS, dan JavaScript untuk membuat antarmuka pengguna yang dinamis dan interaktif yang meningkatkan pengalaman pengguna.
+            </li>
+            <li>
+              Memanfaatkan sistem kontrol versi seperti Git untuk mengelola perubahan kode dan berkolaborasi dengan pengembang lain.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Experience End -->
+
+    <!-- Education -->
+    <section class="education container" id="education">
+      <h3>Education</h3>
+      <div class="education-1 container">
+        <div class="universitas">
+          <h4>D3 Sistem Informasi - IPK: 3.97 /4.00</h4>
+          <h6>Universitas Bina Sarana Informatika Kota Yogyakarta</h6>
+          <p>September 2020 - Agustus 2023</p>
+        </div>
+        <div class="certificate container pt-3">
+          <div class="full-img" id="fullImgBox">
+            <img src="img/Serkom Programmer_TTD.jpg" id="fullImg"/>
+            <span onclick="closeFullImg()">X</span>
+          </div>
+          <div class="certificate-card">
+            <div class="certificate-img">
+              <img src="img/Serkom Programmer_TTD.jpg" width="200px" onclick="openFullImg(this.src)" />
+            </div>
+            <div class="certificate-desc">
+              <div class="certificate-title">
+                <h5>Sertifikasi Kompetensi Programmer</h5>
+              </div>
+              <div class="certificate-publisher">
+                <h6>Badan Nasional Sertifikasi Profesi (BNSP)</h6>
+              </div>
+            </div>
+          </div>
+          <div class="sertificate-card">
+            <div class="certificate-img">
+              <img src="img/Database.jpg" width="200px" onclick="openFullImg(this.src)" />
+            </div>
+            <div class="certificate-desc">
+              <div class="certificate-title">
+                <h5>Profisiensi Pengetahuan Sistem Basis Data</h5>
+              </div>
+              <div class="certificate-publisher">
+                <h6>Ikatan Ahli Informatika Indonesia (IAII)</h6>
+              </div>
+            </div>
+          </div>
+          <div class="sertificate-card">
+            <div class="certificate-img">
+              <img src="img/PCAP.jpg" width="300px" onclick="openFullImg(this.src)" />
+            </div>
+            <div class="certificate-desc">
+              <div class="certificate-title">
+                <h5>PCAP: Programming Essentials in Python</h5>
+              </div>
+              <div class="certificate-publisher">
+                <h6>Cisco Networking Academy</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Education End -->
+
+    <!-- Skill -->
+    <section class="skill container" id="skill">
+      <h3>Skill</h3>
+      <div class="container container-grid">
+        <div class="skill-column">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Bootstrap</li>
+              <li>Database</li>
+              <li>MySQL</li>
+            </ul>
+        </div>
+        <div class="skill-column">
+          <ul>
+            <li>Python</li>
+            <li>Tableau</li>
+            <li>Google Looker</li>
+            <li>Microsoft Excel</li>
+            <li>Microsoft Word</li>
+          </ul>
+        </div>
+        <div class="skill-column">
+            <ul>
+              <li>
+                Bekerja dalam Team
+              </li>
+              <li>
+                Mudah Beradaptasi
+              </li>
+              <li>
+                Membuat Website Sederhana
+              </li>
+              <li>
+                Membuat Visualisasi Data
+              </li>
+        </div>
+      </div>
+    </section>
+    <!-- Skill End -->
+
+    <!-- Other Certificate -->
+    <section class="certificate-2 container" id="certificate">
+      <h3>Certificate</h3>
+      <div class="certificate container">
+        <div class="certificate-card">
+          <div class="certificate-img">
+            <img src="img/REVOU.jpg" width="300px" onclick="openFullImg(this.src)" />
+          </div>
+          <div class="certificate-desc">
+            <div class="certificate-title"><h5>Intro to Data Analytics</h5></div>
+            <div class="certificate-publisher"><h6>Mini Course by RevoU</h6></div>
+          </div>
+        </div>
+        <div class="sertificate-card">
+          <div class="certificate-img">
+            <img src="img/Toefl.jpg" width="300px" onclick="openFullImg(this.src)" />
+          </div>
+          <div class="certificate-desc">
+            <div class="certificate-title"><h5>TOEFL Practice Test</h5></div>
+            <div class="certificate-publisher"><h6>Lembaga Universitas Bina Sarana Informatika</h6></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Other Certificate End -->
+
+    <!-- Contact -->
+    <section class="contact container" id="contact">
+      <h3>Contact</h3>
+      <div class="row row-contact container text-center">
+        <div class="col-md-4 col-contact ">
+          <div class="contact-icon">
+            <i class="bi bi-envelope"></i>
+          </div>
+          <div class="contact-title">
+            <h5>Email</h5>
+          </div>
+          <div class="contact-fill">
+            <a href="mailto:sarapuja3109@gmail.com">
+              sarapuja3109@gmail.com
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-contact ">
+          <div class="contact-icon">
+            <i class="bi bi-whatsapp"></i>
+          </div>
+          <div class="contact-title">
+            <h5> WhatsApp</h5>
+          </div>
+          <div class="contact-fill">
+            <a href="https://api.whatsapp.com/send?phone=6287812505224" target="_blank">
+              +62 878 1250 5224
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-contact ">
+          <div class="contact-icon">
+            <i class="bi bi-geo-alt"></i>
+          </div>
+          <div class="contact-title">
+            <h5>Adress</h5>
+          </div>
+          <div class="contact-fill">
+            <a href="#">
+              Gamping, Sleman, DIY
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-contact ">
+          <div class="contact-icon">
+            <i class="bi bi-linkedin"></i>
+          </div>
+          <div class="contact-title">
+            <h5>LinkedIn</h5>
+          </div>
+          <div class="contact-fill">
+            <a href="https://www.linkedin.com/in/sarapuja/" target="_blank">
+              https://www.linkedin.com/in/sarapuja/
+            </a> 
+          </div>
+        </div>
+        <div class="col-md-4 col-contact ">
+          <div class="contact-icon">
+            <i class="bi bi-github"></i>
+          </div>
+          <div class="contact-title">
+            Github
+          </div>
+          <div class="contact-fill">
+            <a href="https://github.com/sarpuj" target="_blank">
+              https://github.com/sarpuj
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-contact">
+          <div class="contact-icon">
+            <i class="bi bi-instagram"></i>
+          </div>
+          <div class="contact-title">
+            Instagram
+          </div>
+          <div class="contact-fill">
+            <a href="https://www.instagram.com/sarapuja/" target="_blank">
+              sarapuja
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact End -->
+
+    <!-- Footer -->
+    
+    <!-- Footer end -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
+
