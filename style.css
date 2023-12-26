@@ -100,7 +100,7 @@ section {
   color: var(--navbar-color);
 }
 
-.about-me p {
+.about p {
   font-size: 20px;
   padding-top: 20px;
   color: var(--text4-color);
@@ -200,7 +200,7 @@ section {
 /* My Project */
 #myProject {
   padding-top: 70px;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
   color: var(--navbar-color);
 }
 
@@ -262,9 +262,9 @@ section {
 
 /* Responsive */
 @media (max-width: 992px) {
-.navbar-nav a {
+  .navbar-nav a {
   float: none;
-}
+  }
 
   .jumbotron {
     /* padding-top: 50px; */
@@ -280,10 +280,14 @@ section {
   }
 
   .name {
-    font-size: 30px;
+    font-size: 27px;
   }
 
   .job {
+    font-size: 17px;
+  }
+
+  .about p {
     font-size: 17px;
   }
 
@@ -299,11 +303,24 @@ section {
   }
 
   .full-img img {
-    width: 79%;
-    max-width: 500px;
+    width: 95%;
+    max-width: 395px;
+  }
+
+  .skill-column {
+    font-size: 10px;
+  }
+
+  .certificate-desc {
+    order: 1;
+  }
+
+  .certificate-img {
+    order: 2;
   }
 
   .project-photo img{
+    width: 300px;
     text-align: center;
     padding-top: 10px;
   }
