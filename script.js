@@ -38,3 +38,11 @@ icon.onclick = function() {
         this.classList.remove('bi-moon-fill');
     }
 }
+
+// Copyright
+var copyright = document.getElementById('copyright');
+
+// Mendapatkan tahun saat ini
+var thisTime = new Date().getFullYear();
+
+copyright.innerHTML = '&copy; ' + thisTime + ' Sara Puja.';
