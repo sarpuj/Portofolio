@@ -332,6 +332,7 @@ footer{
   }
 
   .profil {
+    padding-top: 15px;
     flex-wrap: wrap;
   }
 
@@ -343,7 +344,7 @@ footer{
   } */
   
   .name {
-    padding-top: 10px;
+    /* padding-top: 10px; */
     font-size: 27px;
   }
 
@@ -357,7 +358,7 @@ footer{
 
   .about-me,
   #myProject {
-    padding-top: 80px;
+    padding-top: 70px;
   }
 
   .education-content,
