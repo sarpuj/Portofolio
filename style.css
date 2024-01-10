@@ -332,16 +332,13 @@ footer{
   }
 
   .profil {
-    padding-top: 15px;
+    padding-top: 20px;
     flex-wrap: wrap;
   }
 
   .photo img {
     width: 200px;
   }
-
-  /* .identity {
-  } */
   
   .name {
     /* padding-top: 10px; */
